@@ -53,10 +53,10 @@ midpoint a b =
         ( x, y, z ) =
             toTuple a
 
-        ( x', y', z' ) =
+        ( x_, y_, z_ ) =
             toTuple b
     in
-        vec3 ((x + x') / 2) ((y + y') / 2) ((z + z') / 2)
+        vec3 ((x + x_) / 2) ((y + y_) / 2) ((z + z_) / 2)
 
 
 {-| Divide each triangle into four triangles.
